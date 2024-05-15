@@ -1,0 +1,16 @@
+def main():
+    sentences = []
+    n = int(input("Enter the number of sentences: "))
+    
+    for i in range(n):
+        sentence = input(f"Enter sentence {i+1}: ")
+        sentences.append(sentence)
+    
+    concatenated_result = ' '.join(sentences)
+    print("Concatenated result:", concatenated_result)
+    
+    multiplied_result = ' '.join(sentences) * n
+    print("Multiplied result:", multiplied_result)
+
+if name == "main":
+    main()
